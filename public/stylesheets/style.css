@@ -1,8 +1,10 @@
 body {
   padding: 50px;
   font: 16px "Proxima Nova", Helvetica, Arial, sans-serif;
+  background-color: slategrey;
+  color: navajowhite;
 }
 
-a {
-  color: #00B7FF;
+h1 {
+  color: whitesmoke;
 }
