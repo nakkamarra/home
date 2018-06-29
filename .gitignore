@@ -62,3 +62,6 @@ typings/
 
 # hook file
 hook.js
+
+# config file
+config.js

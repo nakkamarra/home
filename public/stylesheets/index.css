@@ -1,0 +1,31 @@
+body {
+    background-color: lightslategray;
+    font: 16px "Proxima Nova", Helvetica, Arial, sans-serif;
+}
+
+.main {
+    padding: 50px;
+    color: navajowhite;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+.icons-container {
+    padding: 1%;
+}
+
+.footer-icon {
+    height: 64px;
+    width: 64px;
+}
+
+.footer {
+    padding: 1%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: slategrey;
+}

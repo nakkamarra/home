@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome! </p>
-    <p>This set-up is just a placeholder while some important things get configured!</p>
-    <p>Please be patient as we get our wheels spinning!</p>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= title %></title>
+        <link rel='stylesheet' href='/stylesheets/index.css'/>
+    </head>
+    <body>
+
+    <div class="container">
+        <div class="header">
+
+        </div>
+        <div class="main">
+            <div>
+                <h1><%= title %></h1>
+            </div>
+            <div>
+                <p>Welcome! </p>
+                <p>This set-up is just a placeholder while some important things get configured!</p>
+                <p>Please be patient as we get our wheels spinning!</p>
+            </div>
+        </div>
+        <div class="nav">
+
+        </div>
+        <div class="terminal">
+            <div class="terminal-top-bar">
+
+            </div>
+
+            <div class="terminal-container">
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="icons-container">
+                <a href= <%= urls.linkedin %> >
+                    <img class="footer-icon" src="images/linkedin.png">
+                </a>
+                <a href= <%= urls.github %> >
+                    <img class="footer-icon" src="images/octocat.png">
+                </a>
+                <a href= <%= urls.email %> >
+                    <img class="footer-icon" src="images/gmail.png">
+                </a>
+            </div>
+            <p>&copy; 2018 Nicholas Brandt, All Rights Reserved.<p>
+        </div>
+    </div>
+    </body>
 </html>
