@@ -4,50 +4,48 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title><%= title %></title>
-        <link rel='stylesheet' href='/stylesheets/index.css'/>
+        <link rel='stylesheet' href='stylesheets/index.css'/>
     </head>
     <body>
-
-    <div class="container">
-        <div class="header">
-
-        </div>
-        <div class="main">
-            <div>
+        <main>
+            <header>
                 <h1><%= title %></h1>
-            </div>
-            <div>
+            </header>
+
+            <section class="content">
                 <p>Welcome! </p>
                 <p>This set-up is just a placeholder while some important things get configured!</p>
                 <p>Please be patient as we get our wheels spinning!</p>
-            </div>
-        </div>
-        <div class="nav">
+            </section>
 
-        </div>
-        <div class="terminal">
-            <div class="terminal-top-bar">
+            <nav>
 
-            </div>
+            </nav>
 
-            <div class="terminal-container">
+            <section class="terminal">
+                <section class="terminal-top-bar">
 
-            </div>
-        </div>
-        <div class="footer">
-            <div class="icons-container">
-                <a class="footer-icon-link" href= <%= urls.linkedin %> >
-                    <img class="footer-icon" src="images/linkedin.png">
-                </a>
-                <a class="footer-icon-link" href= <%= urls.github %> >
-                    <img class="footer-icon" src="images/octocat.png">
-                </a>
-                <a class="footer-icon-link" href= <%= urls.email %> >
-                    <img class="footer-icon" src="images/gmail.png">
-                </a>
-            </div>
-            <p>&copy; 2018 Nicholas Brandt, All Rights Reserved.<p>
-        </div>
-    </div>
+                </section>
+
+                <section class="terminal-container">
+
+                </section>
+            </section>
+
+            <footer>
+                <section class="icons-container">
+                    <a class="footer-icon-link" href= <%= urls.linkedin %> >
+                        <img class="footer-icon" src="images/linkedin.png">
+                    </a>
+                    <a class="footer-icon-link" href= <%= urls.github %> >
+                        <img class="footer-icon" src="images/octocat.png">
+                    </a>
+                    <a class="footer-icon-link" href= <%= urls.email %> >
+                        <img class="footer-icon" src="images/gmail.png">
+                    </a>
+                </section>
+                <p>&copy; 2018 Nicholas Brandt, All Rights Reserved.<p>
+            </footer>
+        </main>
     </body>
 </html>
