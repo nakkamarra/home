@@ -14,8 +14,8 @@ h1 {
     color: whitesmoke;
 }
 
-.icons-container {
-    padding: 1%;
+.footer-icon-link {
+    text-decoration: none;
 }
 
 .footer-icon {
