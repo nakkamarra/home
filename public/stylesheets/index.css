@@ -18,12 +18,26 @@ h1 {
 main {
     color: navajowhite;
     display: grid;
-    grid-template-columns: 30% 1fr;
+    grid-gap: 16px;
     grid-template-areas:
-    "header header"
-    "nav section"
-    "nav section"
-    "footer footer";
+    "header"
+    "nav"
+    "section"
+    "footer";
+}
+
+@media (min-width: 400px) {
+    main {
+        color: navajowhite;
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+                "header header"
+                "nav section"
+                "nav section"
+                "footer footer";
+    }
 }
 
 /*
