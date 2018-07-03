@@ -1,22 +1,17 @@
 /*
- Global HTML Elements
+ Global Styling
  */
-
-body {
-    background-color: lightslategray;
-    font: 16px "Proxima Nova", Helvetica, Arial, sans-serif;
-}
-
 h1 {
     color: white;
 }
 
-/*
- Main Elements
- */
+body {
+    background-color: #686963;
+    font: 16px "Proxima Nova", Helvetica, Arial, sans-serif;
+}
 
 main {
-    color: navajowhite;
+    color: white;
     display: grid;
     grid-gap: 16px;
     grid-template-areas:
@@ -26,58 +21,40 @@ main {
     "footer";
 }
 
-@media (min-width: 400px) {
-    main {
-        color: navajowhite;
-        display: grid;
-        grid-gap: 16px;
-        grid-template-columns: 1fr 3fr;
-        grid-template-areas:
-                "header header"
-                "nav section"
-                "nav section"
-                "footer footer";
-    }
-}
-
-/*
- Section Elements
- */
-
 section {
     padding: 16px;
     grid-area: section;
 }
 
-/*
- Header Elements
- */
-
 header {
     padding: 16px;
     grid-area: header;
+    border: 6px solid #CFD2B2;
 }
-
-/*
- Nav Elements
- */
 
 nav {
-    padding: 16px;
+    padding: 4px;
     grid-area: nav;
+    border: 6px solid #8AA29E;
 }
 
+ul {
+    padding-left: 0;
+    text-align: center;
+}
 
-/*
- Footer Elements & Sub-elements
- */
+li {
+    text-align: center;
+    display: inline-block;
+    padding: 4px;
+}
 
 footer {
     padding: 16px;
     grid-area: footer;
     text-align: center;
     color: white;
-    background-color: slategrey;
+    border: 6px solid #DB5461;
 }
 
 .footer-icon-link {
@@ -85,6 +62,66 @@ footer {
 }
 
 .footer-icon {
-    height: 64px;
-    width: 64px;
+    height: 48px;
+    width: 48px;
+}
+
+/*
+ Media-query Styling
+ */
+
+@media (min-width: 500px) {
+    body {
+        background-color: #686963;
+        font: 18px "Proxima Nova", Helvetica, Arial, sans-serif;
+    }
+
+    ul, li {
+        padding: 12px;
+        display: block;
+    }
+
+    main {
+        color: white;
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: 2fr 4fr;
+        grid-template-areas:
+                "header header"
+                "nav section"
+                "nav section"
+                "nav section"
+                "footer footer";
+    }
+
+    .footer-icon {
+        height: 64px;
+        width: 64px;
+    }
+}
+
+@media (min-width: 900px) {
+
+    body {
+        background-color: #686963;
+        font: 20px "Proxima Nova", Helvetica, Arial, sans-serif;
+    }
+
+    main {
+        color: white;
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: 2fr 4fr 4fr;
+        grid-template-areas:
+                "nav header header"
+                "nav section section"
+                "nav section section"
+                "nav section section"
+                "footer footer footer";
+    }
+
+    .footer-icon {
+        height: 64px;
+        width: 64px;
+    }
 }
