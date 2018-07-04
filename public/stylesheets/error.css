@@ -1,0 +1,13 @@
+body {
+    color: white;
+    background-color: #686963;
+    font-family: "News Cycle", sans-serif;
+    font-size: calc(14px + 0.6vw);
+    font-weight: 300;
+}
+
+pre {
+    font-family: "News Cycle", sans-serif;
+    white-space: pre;
+    margin: 1em 1em;
+}

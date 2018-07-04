@@ -7,13 +7,15 @@ h1 {
 
 body {
     background-color: #686963;
-    font: 16px "Proxima Nova", Helvetica, Arial, sans-serif;
+
+    font: calc(14px + 0.6vw) "News Cycle", sans-serif;
+    min-font-size: 1em;
 }
 
 main {
     color: white;
     display: grid;
-    grid-gap: 16px;
+    grid-gap: 8px;
     grid-template-areas:
     "header"
     "nav"
@@ -71,19 +73,18 @@ footer {
  */
 
 @media (min-width: 500px) {
-    body {
-        background-color: #686963;
-        font: 18px "Proxima Nova", Helvetica, Arial, sans-serif;
-    }
 
     ul, li {
         padding: 12px;
         display: block;
     }
 
+    .footer-icon {
+        height: 64px;
+        width: 64px;
+    }
+
     main {
-        color: white;
-        display: grid;
         grid-gap: 16px;
         grid-template-columns: 2fr 4fr;
         grid-template-areas:
@@ -93,24 +94,10 @@ footer {
                 "nav section"
                 "footer footer";
     }
-
-    .footer-icon {
-        height: 64px;
-        width: 64px;
-    }
 }
 
 @media (min-width: 900px) {
-
-    body {
-        background-color: #686963;
-        font: 20px "Proxima Nova", Helvetica, Arial, sans-serif;
-    }
-
     main {
-        color: white;
-        display: grid;
-        grid-gap: 16px;
         grid-template-columns: 2fr 4fr 4fr;
         grid-template-areas:
                 "nav header header"
@@ -118,10 +105,5 @@ footer {
                 "nav section section"
                 "nav section section"
                 "footer footer footer";
-    }
-
-    .footer-icon {
-        height: 64px;
-        width: 64px;
     }
 }
