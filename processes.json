@@ -2,7 +2,7 @@
 
   "apps" : [{
 
-    "name"      	: "nakkamarra_home",
+    "name"      	: "home",
 
     "script"    	: "./bin/www",
 
@@ -11,14 +11,6 @@
     "exec_mode" 	: "cluster",
 
     "watch"    	 	: "true"
-
-  }, {
-
-     "name"	: "hook_server",
-
-     "script" 	: "hook.js",
-
-    "watch"	: "true"
 
   }]
 
